@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Dependency locks (leave package-lock if needed)
+# yarn.lock
+# pnpm-lock.yaml
+
+# Build output
+/dist/
+/.parcel-cache/
+/.next/
+/out/
+/build/
+
+# Local environment
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS & editor files
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
