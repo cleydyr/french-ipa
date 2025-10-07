@@ -11,7 +11,7 @@ npm run dev
 
 Then open the printed URL to preview the static site.
 
-Clicking any IPA símbolo reproduce el audio asociado siempre que exista un archivo en `public/audio/<id>.mp3`.
+Clicking any IPA symbol reproduces the corresponding sound as long as it's present on `public/audio/<id>.mp3`.
 
 ## Build
 
