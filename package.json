@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "serve public",
-    "dev": "serve public",
+    "dev": "browser-sync start --server public --watch --no-ui",
     "build": "cp -R public dist",
     "deploy": "npm run build && npx gh-pages -d dist"
   },
@@ -15,6 +15,7 @@
   "type": "module",
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "serve": "^14.2.5"
+    "serve": "^14.2.5",
+    "browser-sync": "^3.0.4"
   }
 }
