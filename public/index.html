@@ -1,394 +1,278 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cuadro IPA del francés estándar</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="page-header">
-      <h1>Laboratorio IPA del francés estándar</h1>
-      <p>
-        Referencia concisa de los símbolos del Alfabeto Fonético Internacional
-        (AFI) empleados en el francés estándar contemporáneo, organizada al
-        estilo del
-        <a
-          href="https://hcmc.uvic.ca/ling/IPAlab/IPAlab.htm"
-          target="_blank"
-          rel="noreferrer"
-          >IPAlab de UVic</a
-        >.
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuadro IPA del francés estándar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="page-header">
+    <h1>Laboratorio IPA del francés estándar</h1>
+    <p>
+      Referencia concisa de los símbolos del Alfabeto Fonético Internacional
+      (AFI) empleados en el francés estándar contemporáneo, organizada al
+      estilo del
+      <a href="https://hcmc.uvic.ca/ling/IPAlab/IPAlab.htm" target="_blank" rel="noreferrer">IPAlab de UVic</a>.
+    </p>
+  </header>
+
+  <main>
+    <section class="grid-section" aria-labelledby="oral-vowels">
+      <h2 id="oral-vowels">Vocales orales</h2>
+      <div class="ipa-grid ipa-grid--vowels" role="table" aria-describedby="oral-vowels-note">
+        <div class="ipa-grid__corner" role="columnheader">Altura</div>
+        <div class="ipa-grid__header" role="columnheader">Anterior</div>
+        <div class="ipa-grid__header" role="columnheader">Central</div>
+        <div class="ipa-grid__header" role="columnheader">Posterior</div>
+
+        <div class="ipa-grid__side" role="rowheader">Cerrada</div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="no redondeada" data-sound="i">i</span>
+          <span class="ipa-symbol" data-variant="redondeada" data-sound="y">y</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="redondeada" data-sound="u">u</span>
+        </div>
+
+        <div class="ipa-grid__side" role="rowheader">Medio-cerrada</div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="no redondeada" data-sound="e">e</span>
+          <span class="ipa-symbol" data-variant="redondeada" data-sound="o-stroke">ø</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="redondeada" data-sound="o">o</span>
+        </div>
+
+        <div class="ipa-grid__side" role="rowheader">Media (reducida)</div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="schwa">ə</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+
+        <div class="ipa-grid__side" role="rowheader">Medio-abierta</div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="no redondeada" data-sound="open-e">ɛ</span>
+          <span class="ipa-symbol" data-variant="redondeada" data-sound="oe">œ</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="redondeada" data-sound="open-o">ɔ</span>
+        </div>
+
+        <div class="ipa-grid__side" role="rowheader">Abierta</div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="no redondeada" data-sound="a">a</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="histórica" data-sound="alpha">ɑ</span>
+          <span class="ipa-footnote-symbol" aria-label="Fonema histórico">†</span>
+        </div>
+      </div>
+      <p class="ipa-note" id="oral-vowels-note">
+        <span class="ipa">ə</span> aparece en sílabas átonas y puede elidirse en
+        el habla rápida. <span class="ipa-footnote-symbol">†</span> El fonema
+        histórico <span class="ipa">ɑ</span> persiste en la dicción cuidada; la
+        mayoría de los hablantes lo fusionan con <span class="ipa">a</span>.
       </p>
-    </header>
+    </section>
 
-    <main>
-      <section class="grid-section" aria-labelledby="oral-vowels">
-        <h2 id="oral-vowels">Vocales orales</h2>
-        <div
-          class="ipa-grid ipa-grid--vowels"
-          role="table"
-          aria-describedby="oral-vowels-note"
-        >
-          <div class="ipa-grid__corner" role="columnheader">Altura</div>
-          <div class="ipa-grid__header" role="columnheader">Anterior</div>
-          <div class="ipa-grid__header" role="columnheader">Central</div>
-          <div class="ipa-grid__header" role="columnheader">Posterior</div>
+    <section class="grid-section" aria-labelledby="nasal-vowels">
+      <h2 id="nasal-vowels">Vocales nasales</h2>
+      <div class="ipa-grid ipa-grid--nasal" role="table" aria-describedby="nasal-vowels-note">
+        <div class="ipa-grid__corner" role="columnheader">Altura</div>
+        <div class="ipa-grid__header" role="columnheader">Anterior</div>
+        <div class="ipa-grid__header" role="columnheader">Central</div>
+        <div class="ipa-grid__header" role="columnheader">Posterior</div>
 
-          <div class="ipa-grid__side" role="rowheader">Cerrada</div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="no redondeada"
-              data-sound="i"
-              >i</span
-            >
-            <span
-              class="ipa-symbol"
-              data-variant="redondeada"
-              data-sound="y"
-              >y</span
-            >
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="redondeada"
-              data-sound="u"
-              >u</span
-            >
-          </div>
-
-          <div class="ipa-grid__side" role="rowheader">Medio-cerrada</div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="no redondeada"
-              data-sound="e"
-              >e</span
-            >
-            <span
-              class="ipa-symbol"
-              data-variant="redondeada"
-              data-sound="o-stroke"
-              >ø</span
-            >
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="redondeada"
-              data-sound="o"
-              >o</span
-            >
-          </div>
-
-          <div class="ipa-grid__side" role="rowheader">Media (reducida)</div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="schwa">ə</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-
-          <div class="ipa-grid__side" role="rowheader">Medio-abierta</div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="no redondeada"
-              data-sound="open-e"
-              >ɛ</span
-            >
-            <span
-              class="ipa-symbol"
-              data-variant="redondeada"
-              data-sound="oe"
-              >œ</span
-            >
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="redondeada"
-              data-sound="open-o"
-              >ɔ</span
-            >
-          </div>
-
-          <div class="ipa-grid__side" role="rowheader">Abierta</div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="no redondeada"
-              data-sound="a"
-              >a</span
-            >
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="histórica"
-              data-sound="alpha"
-              >ɑ</span
-            >
-            <span class="ipa-footnote-symbol" aria-label="Fonema histórico"
-              >†</span
-            >
-          </div>
+        <div class="ipa-grid__side" role="rowheader">Medio-abierta</div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="no redondeada" data-sound="open-e-nasal">ɛ̃</span>
         </div>
-        <p class="ipa-note" id="oral-vowels-note">
-          <span class="ipa">ə</span> aparece en sílabas átonas y puede elidirse en
-          el habla rápida. <span class="ipa-footnote-symbol">†</span> El fonema
-          histórico <span class="ipa">ɑ</span> persiste en la dicción cuidada; la
-          mayoría de los hablantes lo fusionan con <span class="ipa">a</span>.
-        </p>
-      </section>
-
-      <section class="grid-section" aria-labelledby="nasal-vowels">
-        <h2 id="nasal-vowels">Vocales nasales</h2>
-        <div
-          class="ipa-grid ipa-grid--nasal"
-          role="table"
-          aria-describedby="nasal-vowels-note"
-        >
-          <div class="ipa-grid__corner" role="columnheader">Altura</div>
-          <div class="ipa-grid__header" role="columnheader">Anterior</div>
-          <div class="ipa-grid__header" role="columnheader">Central</div>
-          <div class="ipa-grid__header" role="columnheader">Posterior</div>
-
-          <div class="ipa-grid__side" role="rowheader">Medio-cerrada</div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="redondeada"
-              data-sound="oe-nasal"
-              >œ̃</span
-            >
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-
-          <div class="ipa-grid__side" role="rowheader">Medio-abierta</div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="no redondeada"
-              data-sound="open-e-nasal"
-              >ɛ̃</span
-            >
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="redondeada"
-              data-sound="open-o-nasal"
-              >ɔ̃</span
-            >
-          </div>
-
-          <div class="ipa-grid__side" role="rowheader">Abierta</div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="no redondeada"
-              data-sound="alpha-nasal"
-              >ɑ̃</span
-            >
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="redondeada" data-sound="open-o-nasal">ɔ̃</span>
         </div>
-        <p class="ipa-note" id="nasal-vowels-note">
-          El francés estándar mantiene cuatro vocales nasales.
-          <span class="ipa">œ̃</span> es menos frecuente y se fusiona con
-          <span class="ipa">ɛ̃</span> para muchos hablantes.
-        </p>
-      </section>
 
-      <section class="grid-section" aria-labelledby="consonants">
-        <h2 id="consonants">Consonantes</h2>
-        <div
-          class="ipa-grid ipa-grid--consonants"
-          role="table"
-          aria-describedby="consonants-note"
-        >
-          <div class="ipa-grid__corner" role="columnheader">Modo</div>
-          <div class="ipa-grid__header" role="columnheader">Bilabial</div>
-          <div class="ipa-grid__header" role="columnheader">Labiodental</div>
-          <div class="ipa-grid__header" role="columnheader">Alveolar</div>
-          <div class="ipa-grid__header" role="columnheader">Postalveolar</div>
-          <div class="ipa-grid__header" role="columnheader">Palatal</div>
-          <div class="ipa-grid__header" role="columnheader">Velar</div>
-          <div class="ipa-grid__header" role="columnheader">Uvular</div>
-
-          <div class="ipa-grid__side" role="rowheader">Oclusiva (sorda)</div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="p">p</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="t">t</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="k">k</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-
-          <div class="ipa-grid__side" role="rowheader">Oclusiva (sonora)</div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="b">b</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="d">d</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="g">g</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-
-          <div class="ipa-grid__side" role="rowheader">Fricativa (sorda)</div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="f">f</span>
-          </div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="s">s</span>
-          </div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="esh">ʃ</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-
-          <div class="ipa-grid__side" role="rowheader">Fricativa (sonora)</div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="v">v</span>
-          </div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="z">z</span>
-          </div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="ezh">ʒ</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="uvular-r">ʁ</span>
-          </div>
-
-          <div class="ipa-grid__side" role="rowheader">Nasal</div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="m">m</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="n">n</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="palatal-n">ɲ</span>
-          </div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="eng">ŋ</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-
-          <div class="ipa-grid__side" role="rowheader">Lateral</div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="l">l</span>
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-
-          <div class="ipa-grid__side" role="rowheader">Deslizada</div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
-          <div class="ipa-cell" role="cell">
-            <span class="ipa-symbol" data-sound="j-glide">j</span>
-            <span
-              class="ipa-symbol"
-              data-variant="labio-palatales"
-              data-sound="labio-palatal"
-              >ɥ</span
-            >
-          </div>
-          <div class="ipa-cell" role="cell">
-            <span
-              class="ipa-symbol"
-              data-variant="labio-velar"
-              data-sound="w-glide"
-              >w</span
-            >
-          </div>
-          <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-grid__side" role="rowheader">Abierta</div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="no redondeada" data-sound="alpha-nasal">ɑ̃</span>
         </div>
-        <p class="ipa-note" id="consonants-note">
-          <span class="ipa">ʁ</span> suele realizarse como una fricativa uvular
-          sonora; también se observan variantes vibrantes y aproximantes. La velar
-          <span class="ipa">ŋ</span> aparece sobre todo en préstamos recientes,
-          pero está asentada en el habla culta.
-        </p>
-      </section>
-
-      <section class="grid-section">
-        <h2>Símbolos y notación</h2>
-        <ul class="ipa-additional">
-          <li>
-            <span class="ipa">ː</span> señala la longitud en transcripciones
-            pedagógicas (contrastiva solo en préstamos).
-          </li>
-          <li>
-            <span class="ipa">ˈ</span> indica el acento principal cuando se
-            requiere para mayor claridad, aunque el francés tiene acento débil.
-          </li>
-          <li>
-            <span class="ipa">‿</span> marca la liaison que enlaza sílabas a
-            través de límites léxicos.
-          </li>
-          <li>
-            <span class="ipa">ɥ</span> se etiqueta como “labio-palatales” para
-            resaltar su doble articulación.
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <p>
-        Compilado para la fonología del francés estándar. Disposición inspirada
-        en el
-        <a
-          href="https://hcmc.uvic.ca/ling/IPAlab/IPAlab.htm"
-          target="_blank"
-          rel="noreferrer"
-          >IPAlab de UVic</a
-        >.
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+      </div>
+      <p class="ipa-note" id="nasal-vowels-note">
+        El francés estándar mantiene cuatro vocales nasales.
+        <span class="ipa">œ̃</span> es menos frecuente y se fusiona con
+        <span class="ipa">ɛ̃</span> para muchos hablantes.
       </p>
-    </footer>
+    </section>
 
-    <script type="module" src="script.js"></script>
-  </body>
+    <section class="grid-section" aria-labelledby="consonants">
+      <h2 id="consonants">Consonantes</h2>
+      <div class="ipa-grid ipa-grid--consonants" role="table" aria-describedby="consonants-note">
+        <div class="ipa-grid__corner" role="columnheader">Modo</div>
+        <div class="ipa-grid__header" role="columnheader">Bilabial</div>
+        <div class="ipa-grid__header" role="columnheader">Labiodental</div>
+        <div class="ipa-grid__header" role="columnheader">Alveolar</div>
+        <div class="ipa-grid__header" role="columnheader">Postalveolar</div>
+        <div class="ipa-grid__header" role="columnheader">Palatal</div>
+        <div class="ipa-grid__header" role="columnheader">Velar</div>
+        <div class="ipa-grid__header" role="columnheader">Uvular</div>
+
+        <div class="ipa-grid__side" role="rowheader">Oclusiva (sorda)</div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="p">p</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="t">t</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="k">k</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+
+        <div class="ipa-grid__side" role="rowheader">Oclusiva (sonora)</div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="b">b</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="d">d</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="g">g</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+
+        <div class="ipa-grid__side" role="rowheader">Fricativa (sorda)</div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="f">f</span>
+        </div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="s">s</span>
+        </div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="esh">ʃ</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+
+        <div class="ipa-grid__side" role="rowheader">Fricativa (sonora)</div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="v">v</span>
+        </div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="z">z</span>
+        </div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="ezh">ʒ</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="uvular-r">ʁ</span>
+        </div>
+
+        <div class="ipa-grid__side" role="rowheader">Nasal</div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="m">m</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="n">n</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="palatal-n">ɲ</span>
+        </div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="eng">ŋ</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+
+        <div class="ipa-grid__side" role="rowheader">Lateral</div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="l">l</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+
+        <div class="ipa-grid__side" role="rowheader">Deslizada</div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-sound="j-glide">j</span>
+          <span class="ipa-symbol" data-variant="labio-palatales" data-sound="labio-palatal">ɥ</span>
+        </div>
+        <div class="ipa-cell" role="cell">
+          <span class="ipa-symbol" data-variant="labio-velar" data-sound="w-glide">w</span>
+        </div>
+        <div class="ipa-cell ipa-cell--empty" role="cell" aria-hidden="true"></div>
+      </div>
+      <p class="ipa-note" id="consonants-note">
+        <span class="ipa">ʁ</span> suele realizarse como una fricativa uvular
+        sonora; también se observan variantes vibrantes y aproximantes. La velar
+        <span class="ipa">ŋ</span> aparece sobre todo en préstamos recientes,
+        pero está asentada en el habla culta.
+      </p>
+    </section>
+
+    <section class="grid-section">
+      <h2>Símbolos y notación</h2>
+      <ul class="ipa-additional">
+        <li>
+          <span class="ipa">ː</span> señala la longitud en transcripciones
+          pedagógicas (contrastiva solo en préstamos).
+        </li>
+        <li>
+          <span class="ipa">ˈ</span> indica el acento principal cuando se
+          requiere para mayor claridad, aunque el francés tiene acento débil.
+        </li>
+        <li>
+          <span class="ipa">‿</span> marca la liaison que enlaza sílabas a
+          través de límites léxicos.
+        </li>
+        <li>
+          <span class="ipa">ɥ</span> se etiqueta como “labio-palatales” para
+          resaltar su doble articulación.
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>
+      Compilado para la fonología del francés estándar. Disposición inspirada
+      en el
+      <a href="https://hcmc.uvic.ca/ling/IPAlab/IPAlab.htm" target="_blank" rel="noreferrer">IPAlab de UVic</a>.
+    </p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+
 </html>
